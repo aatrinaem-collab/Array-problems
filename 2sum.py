@@ -4,7 +4,7 @@
 ➔ Необходимо найти два числа в массиве, которые в сумме дают
 заданное значение target, и вернуть их индексы.
 '''
-def 2sum(arr, target):
+def two_sum(arr, target):
   i = 0
   j = len(arr) - 1
   while i<j:
