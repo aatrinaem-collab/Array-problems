@@ -16,3 +16,22 @@ def two_sum(arr, target):
     else:
       j-=1
   return []
+
+if __name__ == "__main__":
+    tests = [
+        ([2, 7, 11, 15], 9),     
+        ([1, 2, 3, 4, 6], 6),     
+        ([-5, -2, 0, 3, 8], 1),   
+        ([1, 2, 3, 4], 100),      
+        ([1, 1], 2),             
+        ([1, 3, 4, 5, 7, 10, 11], 9),  
+    ]
+
+    for arr, target in tests:
+        result = two_sum(arr, target)
+        if result:
+            i, j = result
+            print(f"arr={arr}, target={target} -> индексы {result}, "
+                  f"значения {arr[i]} + {arr[j]} = {arr[i] + arr[j]}")
+        else:
+            print(f"arr={arr}, target={target} -> пара не найдена {result}")
